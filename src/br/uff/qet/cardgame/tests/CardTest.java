@@ -11,31 +11,31 @@ import br.uff.qet.cardgame.Suit;
 
 public class CardTest {
 
-	Card card;
+	Card carta;
 	
 	@Before
 	public void create() {
-		this.card = new Card(Suit.CLUBS, Rank.ACE);
+		this.carta = new Card(Suit.CLUBS, Rank.ACE);
 	}
 	
 	@Test
 	public void testCard() {
-		assertNotNull(this.card);
+		assertNotNull(this.carta);
 	}
 
 	@Test
 	public void testGetSuit() {
-		assertEquals(Suit.CLUBS, this.card.getSuit());
+		assertEquals(Suit.CLUBS, this.carta.getSuit());
 	}
 
 	@Test
 	public void testGetType() {
-		assertEquals(Rank.ACE, this.card.getType());
+		assertEquals(Rank.ACE, this.carta.getType());
 	}
 
 	@Test
 	public void testGetValue() {
-		assertEquals(1, this.card.getValue());
+		assertEquals(1, this.carta.getValue());
 	}
 
 }
